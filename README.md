@@ -18,7 +18,7 @@
   url = 	"https://www.aclweb.org/anthology/P19-1464"
 }
 ```
-- coference paper: https://www.aclweb.org/anthology/P19-1464
+- conference paper: https://www.aclweb.org/anthology/P19-1464
 
 ## Prerequirement
 - python=3.6.5  
