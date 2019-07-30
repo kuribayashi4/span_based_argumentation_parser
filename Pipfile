@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+nltk = "*"
+networkx = "*"
+lxml = "*"
+pydot = "*"
+sklearn = "*"
+bidict = "*"
+pandas = "*"
+matplotlib = "*"
+allennlp = "*"
+torch = "==1.1.0"
+dill = "*"
+chainer = "*"
+logzero = "*"
+"cupy-cuda90" = "*"
+easydict = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
