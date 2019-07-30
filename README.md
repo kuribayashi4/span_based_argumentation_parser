@@ -18,6 +18,7 @@
   url = 	"https://www.aclweb.org/anthology/P19-1464"
 }
 ```
+- coference paper: https://www.aclweb.org/anthology/P19-1464
 
 ## Prerequirement
 - python=3.6.5  
@@ -33,8 +34,9 @@
 - Set DEVICE_ID if you use GPU for encoding the texts with ELMo. If not, set -1 to DEVICE_ID.
 
 ## Usage
+If you run the training on CPU, unset the --device and -g options.  
+
 ### Experiments on the persuasive essay corpus
-If you run the training on CPU, unset the --device and -g options.
 - ELMo, LSTM+dist  
 `src/train.py --dataset PE --device -g [DEVICE_ID] --seed 39 --use-elmo 1 --elmo-path work/PE4ELMo.hdf5 --reps-type contextualized -ed 300 -hd 256 --optimizer Adam --lr 0.001 --ac-type-alpha 0.25 --link-type-alpha 0.25 --batchsize 16 --epoch 500 --dropout 0.5 --dropout-lstm 0.1 --lstm-ac --lstm-shell --lstm-ac-shell --lstm-type --elmo-layers avg -o [OUT_DIRECTORY]`  
   
@@ -48,5 +50,8 @@ If you run the training on CPU, unset the --device and -g options.
 ### Check the performance of each model
 `src/results.py -d [DIRECTORY_OF_OUTPUT_FILES]`
 
-### Inference and analysis (on GPU)
+### Inference and analysis
 `python src/infer_analysis.py -d [DIRECTORY_OF_OUTPUT_FILES] -g [DEVICE_ID] --device --data test`
+
+## LICENSE
+MIT License
