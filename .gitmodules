@@ -1,3 +1,6 @@
+[submodule "data/data/arg-microtexts-master"]
+	path = data/data/arg-microtexts-master
+	url = git@github.com:peldszus/arg-microtexts.git
 [submodule "data/arg-microtexts-master"]
 	path = data/arg-microtexts-master
 	url = git@github.com:peldszus/arg-microtexts.git
