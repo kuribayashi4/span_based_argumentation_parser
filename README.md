@@ -27,6 +27,7 @@
 - [GloVe(6B, 300d)](http://nlp.stanford.edu/data/glove.6B.zip)
   
 ## Installation
+`pipenv install`  
 `pipenv shell`
 
 ## Preprocess
